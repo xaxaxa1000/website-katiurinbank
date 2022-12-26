@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Регистрация</title>
+	<link rel="stylesheet" href="style_reg.css">
+</head>
+<body>
+	
+	<div class="logo">
+		<img src="../images/logo.png" alt="">
+	</div>
+
+	<div class="authentication">
+		<div class="authentication__inner">
+			<div class="authentication__form">
+				<form action="reg.php" method="post">
+					<h1 class="reg__title">Регистрация</h1>
+					<a href="../index.html"> &#60 На главную</a>
+
+					<div class="enter_fields">
+					
+						<div class="name form_center">
+							<p>Номер телефона</p>
+							<input class="input" type="text" required placeholder="88005553535" name="loginname" /><br />
+						</div>
+
+						<div class="email form_center">
+							<p class="pop">Электронная почта</p>
+							<input class="input" type="email" required placeholder="name@mail.ru" name="password" /><br />
+						</div>
+
+						<div class="password form_center">
+							<p class="pop" >Пароль</p>
+							<input class="input" type="password" required placeholder="******" name="password" /><br />
+						</div>
+
+						<div class="FIO form_center">
+							<p class="pop" >Фамилия</p>
+							<input class="input" type="password" required placeholder="Иванов" name="surname" />
+							<p class="pop" >Имя</p>
+							<input class="input" type="password" required placeholder="Иван" name="firstname" />
+							<p class="pop" >Отчество</p>
+							<input class="input" type="password" required placeholder="Иванович" name="patronymic" />
+						</div>
+
+						<div class="birthday form_center">
+							<p class="pop" >Дата рождения</p>
+							<input class="input " type="date" name="day"/>
+						</div>
+
+						<button class="form_center">Создать аккаунт</button>
+
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
