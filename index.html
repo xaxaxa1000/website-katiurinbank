@@ -16,15 +16,15 @@
 			<div class="authentication">
 				<img class="logo_img" src="images/logo_aut.jpg" alt="">
 				<div class="form_aut">
-					<form action="foo.php" method="post"> <!-- Заменить на файл с аутентификацией -->
+					<form action="php/auth.php" method="post">
 						<div class="login">
 							<p>Логин</p>
-							<input class="input" type="text" name="loginname" /><br />
+							<input class="input" type="text" required placeholder="Номер телефона" name="phone_number" /><br />
 						</div>
 
 						<div class="password">
 							<p class="pop" >Пароль</p>
-							<input class="input" type="password" name="password" /><br />
+							<input class="input" type="password" required placeholder="********" name="password" /><br />
 						</div>
 
 						<button class="button" type="submit" name="button"> Отправь меня </button>
@@ -58,7 +58,7 @@
 			<div class="sec_rule__desc">
 				Никому не говорите свои коды из СМС, даже если к вам обращаются от имени сотрудников СберБанка. Это мошенники.
 			</div>
-			
+
 			<div class="sec_rule__desc">
 				Если вас просят установить программу на ваше устройство под предлогом технической поддержки или защиты средств, не делайте этого. Это мошенники.
 			</div>
@@ -93,7 +93,7 @@
 		</div>
 
 		<div class="sec_rule__address sec_rule__opacity">
-			&copy; 2022—2023 ПАО КатюринБанк 
+			&copy; 2022—2023 ПАО КатюринБанк
 		</div>
 
 
