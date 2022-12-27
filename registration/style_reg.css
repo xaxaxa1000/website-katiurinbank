@@ -68,3 +68,48 @@ button {
 .form_center {
 	margin-left: 160px;
 }
+
+/*SEC_RULE
+===========================*/
+
+.sec_rule {
+	display: flex;
+	justify-content: center;
+	background-color: #F7F7F7;
+}
+
+.sec_rule__title {
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+.hr {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	opacity: 0.2;
+}
+
+.sec_rule__phondesc {
+	display: flex;
+}
+
+.sec_rule__phone {
+	display: flex;
+	flex-direction: column;
+	width: 250px;
+	padding: 10px;
+	margin-right: 75px;
+	margin-bottom: 50px;
+}
+
+
+.sec_rule__address {
+	width: 1000px;
+	margin-bottom: 50px;
+}
+
+.sec_rule__opacity {
+	margin-top: 10px;
+	color: #717171;
+}
+
