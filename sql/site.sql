@@ -2,10 +2,10 @@
 -- version 5.1.2
 -- https://www.phpmyadmin.net/
 --
--- Хост: localhost:3306
--- Время создания: Дек 27 2022 г., 08:35
--- Версия сервера: 5.7.24
--- Версия PHP: 8.0.1
+-- Host: localhost:3306
+-- Generation Time: Dec 27, 2022 at 10:09 AM
+-- Server version: 5.7.24
+-- PHP Version: 8.0.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,18 +18,18 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `site`
+-- Database: `site`
 --
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `register`
+-- Table structure for table `register`
 --
 
 CREATE TABLE `register` (
   `id` int(10) UNSIGNED NOT NULL,
-  `phone_number` int(11) UNSIGNED NOT NULL,
+  `phone_number` bigint(15) UNSIGNED NOT NULL,
   `email` varchar(128) NOT NULL,
   `password` varchar(32) NOT NULL,
   `surname` text NOT NULL,
@@ -39,24 +39,31 @@ CREATE TABLE `register` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Индексы сохранённых таблиц
+-- Dumping data for table `register`
+--
+
+INSERT INTO `register` (`id`, `phone_number`, `email`, `password`, `surname`, `name`, `patronymic`, `birthday`) VALUES
+(10, 88005553535, 'valeron228@yandex.ru', '267eb3281384a8c96197cc123d6e1cdc', 'Пупкин', 'Валера', 'Алексеевич', '2322-11-11');
+
+--
+-- Indexes for dumped tables
 --
 
 --
--- Индексы таблицы `register`
+-- Indexes for table `register`
 --
 ALTER TABLE `register`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT для сохранённых таблиц
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT для таблицы `register`
+-- AUTO_INCREMENT for table `register`
 --
 ALTER TABLE `register`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
